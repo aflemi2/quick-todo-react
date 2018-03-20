@@ -7,6 +7,11 @@ const Title = ()=>(
     My Todo List
   </h1>
 );
+const Chore = ({chore})=>(
+  <h2>
+    {chore}
+  </h2>
+);
 
 class Items extends React.Component{
   constructor(){
@@ -57,6 +62,7 @@ const App = ()=> {
 return (
   <div>
     <Title />
+    <Chore chore='Buy Groceries' />
     <Items />
   </div>
 );
